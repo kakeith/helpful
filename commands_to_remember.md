@@ -85,7 +85,7 @@ Write to standard error when loading big files
 sys.stderr.write(".")
 ```
 
-##Jupyter notebook 
+## Jupyter notebook 
 
 ```
 #covert jupyter to .py file 
