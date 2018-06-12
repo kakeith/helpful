@@ -93,13 +93,17 @@ jupyter nbconvert --to script 1idvl.ipynb
 ```
 
 ### Using virtualenv within a jupyter notebook 
+
 http://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs
 In a Jupyter notebook 
+
 Kernel -> Change kernel 
 
 ### Auto-reloading Jupyter Notebook 
+```
 %load_ext autoreload
 %autoreload 2
+```
 
 ## Linux/Unix 
 
