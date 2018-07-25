@@ -1,0 +1,29 @@
+When starting a new project here are the steps to go through: 
+
+(1) Make a github repo for the project. 
+-Add a .gitignore 
+-Create Python virtual environment
+-Create a README.md with notes about dependencies, organization etc. 
+
+(2) Keep track of todo lists of the project via issues and notes in the "Project" tab of github. 
+
+(3) mkdir writing/ 
+-Create a .latex file where you will keep a paper draft and notes for a paper. 
+
+(4) mkdir lit_review/ 
+-Store any pdfs here, which you will highlight and take notes on directly. Label the pdfs with the same labeling at the bib entry so you can access them easily. 
+-Create a .bib file for the papers that are worthy and keep notes directly in the .bib file 
+
+(5) Buy a plain manilla folder where you will keep any pdfs you print out. For the printouts make sure to write 'PRINTED OUT' on top of the electronic version of the pdf.  
+
+(5) Create a Google sheets (or Excel) document where you will keep all relevant experiments
+-Make a note of this link in the README.md 
+
+(6) mkdir talks/ 
+-Start a .ppt or Keynote slides that you can save relavent examples, figures that will be useful for the paper and any presentations. 
+
+(7) Buy a new small notebook where you will keep track of paper notes and notes from meetings. 
+
+(8) mkdir ideas/ 
+-Here store .jpg images from whiteboard conversations, relavent emails listed by date 
+-Also keep initial grant proposals etc. 
