@@ -94,8 +94,12 @@ jupyter nbconvert --to script 1idvl.ipynb
 
 ### Using virtualenv within a jupyter notebook 
 
-http://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs
-In a Jupyter notebook 
+```
+$ python -m venv projectname
+$ source projectname/bin/activate
+(venv) $ pip install ipykernel
+(venv) $ ipython kernel install --user --name=projectname
+```
 
 Kernel -> Change kernel 
 
