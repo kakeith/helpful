@@ -137,3 +137,12 @@ https://www.macissues.com/2014/10/13/how-to-mount-a-remote-system-as-a-drive-usi
 sshfs kkeith@hobbes.cs.umass.edu:/home/kkeith/ ~/mount/
 umount -f ~/mount/
 ```
+
+### Git / Github 
+Removing a large file that you committed several commits ago but now can't push. (A lot of the filter-branch suggestions don't work for me in many cases) 
+https://blog.ostermiller.org/git-remove-from-history
+
+E.g. you have an error message: 
+```
+remote: error: File pytorch.zip is 510.96 MB; this exceeds GitHub Enterprise's file size limit of 100.00 MB
+```
