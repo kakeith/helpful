@@ -111,6 +111,14 @@ Kernel -> Change kernel
 
 ## Linux/Unix 
 
+### .bashrc
+```
+#Makes folders colored 
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+```
+
 ### Awk 
 ```
 #prints the third column 
