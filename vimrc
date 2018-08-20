@@ -5,4 +5,4 @@ set autoindent
 set hlsearch
 :so ~/.vim/bundle/supertab/plugin/supertab.vim
 set laststatus=2
-set statusline=%f "tail of the filename
+set tabstop=4 expandtab shiftwidth=4 softtabstop=4
