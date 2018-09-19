@@ -1,7 +1,13 @@
 # Commands to remember
 Katherine Keith 
 
-## Latex 
+## Latex
+
+### Use for comments 
+```
+\usepackage{color}
+\newcommand{\kkcomment}[1]{\textcolor{red}{[#1 -KAK]}}
+```
 
 ### Figures 
 
