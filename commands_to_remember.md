@@ -63,6 +63,9 @@ sorted(d.items(), key=lambda (k, v): -v)
 
 #default dict of a default dict 
 defaultdict(lambda : defaultdict(int))
+
+#To check if a key is in a dictionary, the fastest way is  
+if d.get(k) != None 
 ```
 
 ### Matplotlib 
