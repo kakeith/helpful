@@ -1,5 +1,8 @@
 # Commands to remember
-Katherine Keith 
+Katherine Keith
+
+## Favorite NLP packages 
+[Gensim](https://radimrehurek.com/gensim/index.html) (algorithmic scalability of distributional semantics) 
 
 ## Latex
 
