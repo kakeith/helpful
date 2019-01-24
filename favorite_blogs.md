@@ -1,0 +1,2 @@
+- [Abagail See](http://www.abigailsee.com/)
+- [Sebastian Ruder](http://ruder.io/)

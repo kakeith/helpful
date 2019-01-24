@@ -1,7 +1,16 @@
 # Commands to remember
-Katherine Keith 
+Katherine Keith
 
-## Latex 
+## Favorite NLP packages 
+[Gensim](https://radimrehurek.com/gensim/index.html) (algorithmic scalability of distributional semantics) 
+
+## Latex
+
+### Use for comments 
+```
+\usepackage{color}
+\newcommand{\kkcomment}[1]{\textcolor{red}{[#1 -KAK]}}
+```
 
 ### Figures 
 
@@ -54,6 +63,9 @@ sorted(d.items(), key=lambda (k, v): -v)
 
 #default dict of a default dict 
 defaultdict(lambda : defaultdict(int))
+
+#To check if a key is in a dictionary, the fastest way is  
+if d.get(k) != None 
 ```
 
 ### Matplotlib 
