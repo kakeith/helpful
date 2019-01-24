@@ -58,8 +58,11 @@ args = parser.parse_args()
 
 ### Dictionaries 
 ```
-#sorts by largest value 
+#sorts by largest value (Python2)  
 sorted(d.items(), key=lambda (k, v): -v)
+
+#sorting by descending value for Python3
+sorted(d.items(), key=lambda kv: -kv[1])
 
 #default dict of a default dict 
 defaultdict(lambda : defaultdict(int))
