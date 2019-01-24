@@ -132,8 +132,7 @@ Kernel -> Change kernel
 ### Using both Python and R within a single page
  
 1. Make sure you are using Python3 with anaconda. 
-2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/inst
-allation/): 
+2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/installation/): 
 ```
 install.packages('IRkernel')
 IRkernel::installspec()
