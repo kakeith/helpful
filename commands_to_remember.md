@@ -129,7 +129,7 @@ Kernel -> Change kernel
 %autoreload 2
 ```
 
-### Using both Python and R within a single page
+### Using both Python and R within a single Jupyter notebook
  
 1. Make sure you are using Python3 with anaconda. 
 2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/installation/): 
