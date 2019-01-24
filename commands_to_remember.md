@@ -101,6 +101,11 @@ $ source projectname/bin/activate
 (venv) $ ipython kernel install --user --name=projectname
 ```
 
+Make sure that it is in the kernelspec list 
+```
+jupyter kernelspec list
+```
+
 Kernel -> Change kernel 
 
 ### Auto-reloading Jupyter Notebook 
@@ -108,6 +113,25 @@ Kernel -> Change kernel
 %load_ext autoreload
 %autoreload 2
 ```
+
+### Using both Python and R within a single page
+ 
+1. Make sure you are using Python3 with anaconda. 
+2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/inst
+allation/): 
+```
+install.packages('IRkernel')
+IRkernel::installspec()
+```
+3. Follow the instructions to download SoS here: https://vatlab.github.io/sos-docs/running.html#content
+```
+pip install sos
+pip install sos-notebook
+pip install sos-r
+python -m sos_notebook.install
+```
+4. Then follow the SoS examples and you should be able to run R and Python within the same Jupyter notebook. Trading data back and forth! 
+https://vatlab.github.io/blog/post/sos-notebook/
 
 ## Linux/Unix 
 
