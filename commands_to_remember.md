@@ -4,6 +4,25 @@ Katherine Keith
 ## Favorite NLP packages 
 [Gensim](https://radimrehurek.com/gensim/index.html) (algorithmic scalability of distributional semantics) 
 
+## Sklearn 
+
+### Grid search, cross validation 
+```
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import log_loss, make_scorer
+
+
+parameters = {'C': [1.0/2.0**reg for reg in np.arange(-12, 12)]}
+lr = LogisticRegression(penalty='l1')
+grid_search = GridSearchCV(lr, parameters, cv=10, refit=True, 
+                           scoring=make_scorer(log_loss, greater_is_better=True))
+grid_search.fit(X, y)
+best_model = grid_search.best_estimator_
+print(best_model)
+print('Training mean accuracy=', best_model.score(X, y))
+```
+
 ## Latex
 
 ### Use for comments 
