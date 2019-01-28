@@ -77,8 +77,11 @@ args = parser.parse_args()
 
 ### Dictionaries 
 ```
-#sorts by largest value 
+#sorts by largest value (Python2)  
 sorted(d.items(), key=lambda (k, v): -v)
+
+#sorting by descending value for Python3
+sorted(d.items(), key=lambda kv: -kv[1])
 
 #default dict of a default dict 
 defaultdict(lambda : defaultdict(int))
@@ -145,11 +148,10 @@ Kernel -> Change kernel
 %autoreload 2
 ```
 
-### Using both Python and R within a single page
+### Using both Python and R within a single Jupyter notebook
  
 1. Make sure you are using Python3 with anaconda. 
-2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/inst
-allation/): 
+2. Make sure you have the latest version of R and install an R kernel. Within the R console run (instructions from here https://irkernel.github.io/installation/): 
 ```
 install.packages('IRkernel')
 IRkernel::installspec()
