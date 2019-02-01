@@ -126,6 +126,12 @@ sys.stderr.write(".")
 jupyter nbconvert --to script 1idvl.ipynb
 ```
 
+### Add images to Jupyter notebook
+Change the cell type to markdown and then use 
+```
+<img src="PIC_NAME.JPG">
+```
+
 ### Using virtualenv within a jupyter notebook 
 
 ```
