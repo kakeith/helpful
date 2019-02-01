@@ -30,6 +30,10 @@ print('Training mean accuracy=', best_model.score(X, y))
 \usepackage{color}
 \newcommand{\kkcomment}[1]{\textcolor{red}{[#1 -KAK]}}
 ```
+### Reduce space between bullets 
+```
+\itemsep0em
+```
 
 ### Figures 
 
