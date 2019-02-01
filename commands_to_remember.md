@@ -32,6 +32,7 @@ print('Training mean accuracy=', best_model.score(X, y))
 ```
 ### Reduce space between bullets 
 ```
+\begin{itemize}[noitemsep]
 \itemsep0em
 ```
 
