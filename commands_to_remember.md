@@ -134,7 +134,7 @@ jupyter nbconvert --to script 1idvl.ipynb
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
 ```
-<img src="PIC_NAME.JPG">
+<img src="graphs/Libertarian.PNG" alt="Drawing" style="width: 500px;">
 ```
 
 ### Using virtualenv within a jupyter notebook 
