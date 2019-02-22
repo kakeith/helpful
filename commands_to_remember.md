@@ -219,3 +219,16 @@ E.g. you have an error message:
 ```
 remote: error: File pytorch.zip is 510.96 MB; this exceeds GitHub Enterprise's file size limit of 100.00 MB
 ```
+
+## Python package distribution (PyPi) 
+Best instructions to follow: https://packaging.python.org/tutorials/packaging-projects/
+
+First, aim to upload to test.pypi.org so that you're not using the real thing. 
+ 
+1. Create a `setup.py` file that follows the instructions above. 
+2. `python3 setup.py sdist bdist_wheel`
+3. Then you can run `pip install .` to install locally and run a python interpreter to make sure all your modules load correctly. 
+4. Create a test.pypi account and then upload to test.pypi with `python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*` 
+5. With a virtualenv, you can then download the pip package you just uploaded `python3 -m pip install --index-url https://test.pypi.org/simple/ PACKAGE_NAME` (where `PACKAGE_NAME` matches what you put in your `setup.py`. 
+
+Then upload to the real PyPi once you're satistified with the tests.  
