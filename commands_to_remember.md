@@ -30,6 +30,11 @@ print('Training mean accuracy=', best_model.score(X, y))
 \usepackage{color}
 \newcommand{\kkcomment}[1]{\textcolor{red}{[#1 -KAK]}}
 ```
+### Reduce space between bullets 
+```
+\begin{itemize}[noitemsep]
+\itemsep0em
+```
 
 ### Figures 
 
@@ -129,7 +134,7 @@ jupyter nbconvert --to script 1idvl.ipynb
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
 ```
-<img src="PIC_NAME.JPG">
+<img src="graphs/Libertarian.PNG" alt="Drawing" style="width: 500px;">
 ```
 
 ### Using virtualenv within a jupyter notebook 
