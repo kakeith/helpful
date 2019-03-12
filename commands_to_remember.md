@@ -179,6 +179,11 @@ https://vatlab.github.io/blog/post/sos-notebook/
 
 ## Linux/Unix 
 
+### Symbolic link
+```
+ln -s ORIGNIAL SYMLINK
+```
+
 ### .bashrc
 ```
 #Makes folders colored 
