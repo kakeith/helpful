@@ -177,6 +177,10 @@ python -m sos_notebook.install
 4. Then follow the SoS examples and you should be able to run R and Python within the same Jupyter notebook. Trading data back and forth! 
 https://vatlab.github.io/blog/post/sos-notebook/
 
+Here is an example that I use often: list of dicts -> pandas dataframe (python) -> R dataframe using SoS 
+<img src="imgs/sos.JPG" alt="Drawing" style="width: 500px;">
+
+
 ## Linux/Unix 
 
 ### .bashrc
