@@ -183,6 +183,11 @@ Here is an example that I use often: list of dicts -> pandas dataframe (python) 
 
 ## Linux/Unix 
 
+### Symbolic link
+```
+ln -s ORIGNIAL SYMLINK
+```
+
 ### .bashrc
 ```
 #Makes folders colored 
