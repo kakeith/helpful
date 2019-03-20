@@ -247,4 +247,8 @@ First, aim to upload to test.pypi.org so that you're not using the real thing.
 4. Create a test.pypi account and then upload to test.pypi with `python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*` 
 5. With a virtualenv, you can then download the pip package you just uploaded `python3 -m pip install --index-url https://test.pypi.org/simple/ PACKAGE_NAME` (where `PACKAGE_NAME` matches what you put in your `setup.py`. 
 
-Then upload to the real PyPi once you're satistified with the tests.  
+Then upload to the real PyPi once you're satistified with the tests.
+
+1. `twine upload dist/*`. 
+2. Make sure it uploaded correctly with `pip install [PACKAGE-NAME]` and `https://pypi.org/project/PACKAGE-NAME/`. 
+
