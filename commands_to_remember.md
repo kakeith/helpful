@@ -1,8 +1,10 @@
 # Commands to remember
 Katherine Keith
 
-## Favorite NLP packages 
-[Gensim](https://radimrehurek.com/gensim/index.html) (algorithmic scalability of distributional semantics) 
+## LDA, topic models  
+[Gensim wrapper of Mallet](https://radimrehurek.com/gensim/models/wrappers/ldamallet.html). 
+
+[Helpful tutorial using this software.](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) 
 
 ## Sklearn 
 
