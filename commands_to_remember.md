@@ -252,3 +252,16 @@ Then upload to the real PyPi once you're satistified with the tests.
 1. `twine upload dist/*`. 
 2. Make sure it uploaded correctly with `pip install [PACKAGE-NAME]` and `https://pypi.org/project/PACKAGE-NAME/`. 
 
+## Reddit Python API (PRAW) 
+1. Create an account on Reddit. 
+2. Follow these instructions https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example. You are a script type app. You will create an app on the Reddit site and then get a clientID and client secret.
+3. Then you can query via substituting in the relative credentials  
+```
+import praw
+reddit = praw.Reddit(
+    username = my_username, 
+    password = my_password, 
+    client_id=my_client_id,
+    client_secret=my_client_secret,
+    user_agent='blah')
+```
