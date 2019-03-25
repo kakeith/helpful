@@ -82,6 +82,11 @@ parser.add_argument("input", help=".json file", type=str)
 args = parser.parse_args()
 ```
 
+### Making folders 
+```
+if not os.path.exists(folder): os.mkdir(folder)
+```
+
 ### Dictionaries 
 ```
 #sorts by largest value (Python2)  
