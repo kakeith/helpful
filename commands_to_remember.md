@@ -69,6 +69,11 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Python
 
+### Pandas select rows that have a column match 
+```
+new_df = old_df.loc[old_df['colm_name'] == 1]
+```
+
 ### Boilerplate 
 ```
 if __name__ == '__main__':
