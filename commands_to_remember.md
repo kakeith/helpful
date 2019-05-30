@@ -130,6 +130,12 @@ plt.tight_layout()
 plt.savefig('../../HW03-report/q2d', bbox_inches='tight')
 plt.show()
 ```
+Clearning plots (for example, when iterating through a loop): 
+```
+plt.clf()
+plt.close()
+```
+
 ### Other 
 Write to standard error when loading big files
 ```
