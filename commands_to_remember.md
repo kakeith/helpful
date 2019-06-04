@@ -148,6 +148,9 @@ sys.stderr.write(".")
 #covert jupyter to .py file 
 jupyter nbconvert --to script 1idvl.ipynb
 ```
+### Open jupyter notebook from remote server locally
+1. On remote, `jupyter notebook`
+2. On local, `ssh -NL $PORT:localhost:$PORT kkeith@hobbes.cs.umass.edu`
 
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
