@@ -136,6 +136,24 @@ plt.clf()
 plt.close()
 ```
 
+### Parsing HTML tables with BeautifulSoup, save to csv  
+```
+import urllib, requests, json, time
+from bs4 import BeautifulSoup
+
+page_url = "INSERT_DESIRED_URL_HERE"
+page = requests.get(page_url)
+soup = BeautifulSoup(page.text, 'html.parser') 
+
+fout = 'TEXT_HERE'
+ww = open(fout, 'w')
+for row in soup.find_all('tr'):
+    row.find_all('td')
+    cols = row.find_all('td')
+    cols = ''.join([ele.text.strip()+',' for ele in cols])+'\n'
+    ww.write(cols)
+```
+
 ### Other 
 Write to standard error when loading big files
 ```
