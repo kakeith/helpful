@@ -167,8 +167,9 @@ sys.stderr.write(".")
 jupyter nbconvert --to script 1idvl.ipynb
 ```
 ### Open jupyter notebook from remote server locally
-1. On remote, `jupyter notebook`
-2. On local, `ssh -NL $PORT:localhost:$PORT kkeith@hobbes.cs.umass.edu` where you specify `PORT=8889` or whatever the port is on your remote. 
+1. On remote, `jupyter notebook --port=9999`
+2. On local, `ssh -NL $PORT:localhost:$PORT kkeith@hobbes.cs.umass.edu` where you specify `PORT=999` or whatever the port is on your remote. 
+3. Manually open in a browser `http://localhost:9999/tree`
 
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
