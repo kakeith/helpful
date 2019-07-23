@@ -69,6 +69,12 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Python
 
+### Exceptions
+Basic expection method that exists the program 
+```
+raise Exception('write your message here')
+```
+
 ### Pandas select rows that have a column match 
 ```
 new_df = old_df.loc[old_df['colm_name'] == 1]
