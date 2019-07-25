@@ -234,6 +234,12 @@ Here is an example that I use often: list of dicts -> pandas dataframe (python) 
 ln -s ORIGNIAL SYMLINK
 ```
 
+### bash script
+Make the date 
+```
+START=`date '+%m-%d-%H:%M'`
+```
+
 ### .bashrc
 ```
 #Makes folders colored 
