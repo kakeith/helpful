@@ -1,8 +1,10 @@
 # Commands to remember
 Katherine Keith
 
-## Favorite NLP packages 
-[Gensim](https://radimrehurek.com/gensim/index.html) (algorithmic scalability of distributional semantics) 
+## LDA, topic models  
+[Gensim wrapper of Mallet](https://radimrehurek.com/gensim/models/wrappers/ldamallet.html). 
+
+[Helpful tutorial using this software.](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) 
 
 ## Sklearn 
 
@@ -67,6 +69,17 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Python
 
+### Exceptions
+Basic expection method that exists the program 
+```
+raise Exception('write your message here')
+```
+
+### Pandas select rows that have a column match 
+```
+new_df = old_df.loc[old_df['colm_name'] == 1]
+```
+
 ### Boilerplate 
 ```
 if __name__ == '__main__':
@@ -78,6 +91,11 @@ if __name__ == '__main__':
 parser = argparse.ArgumentParser()
 parser.add_argument("input", help=".json file", type=str)
 args = parser.parse_args()
+```
+
+### Making folders 
+```
+if not os.path.exists(folder): os.mkdir(folder)
 ```
 
 ### Dictionaries 
@@ -118,6 +136,30 @@ plt.tight_layout()
 plt.savefig('../../HW03-report/q2d', bbox_inches='tight')
 plt.show()
 ```
+Clearning plots (for example, when iterating through a loop): 
+```
+plt.clf()
+plt.close()
+```
+
+### Parsing HTML tables with BeautifulSoup, save to csv  
+```
+import urllib, requests, json, time
+from bs4 import BeautifulSoup
+
+page_url = "INSERT_DESIRED_URL_HERE"
+page = requests.get(page_url)
+soup = BeautifulSoup(page.text, 'html.parser') 
+
+fout = 'TEXT_HERE'
+ww = open(fout, 'w')
+for row in soup.find_all('tr'):
+    row.find_all('td')
+    cols = row.find_all('td')
+    cols = ''.join([ele.text.strip()+',' for ele in cols])+'\n'
+    ww.write(cols)
+```
+
 ### Other 
 Write to standard error when loading big files
 ```
@@ -130,6 +172,10 @@ sys.stderr.write(".")
 #covert jupyter to .py file 
 jupyter nbconvert --to script 1idvl.ipynb
 ```
+### Open jupyter notebook from remote server locally
+1. On remote, `jupyter notebook --port=9999`
+2. On local, `ssh -NL $PORT:localhost:$PORT kkeith@hobbes.cs.umass.edu` where you specify `PORT=999` or whatever the port is on your remote. 
+3. Manually open in a browser `http://localhost:9999/tree`
 
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
@@ -186,6 +232,12 @@ Here is an example that I use often: list of dicts -> pandas dataframe (python) 
 ### Symbolic link
 ```
 ln -s ORIGNIAL SYMLINK
+```
+
+### bash script
+Make the date 
+```
+START=`date '+%m-%d-%H:%M'`
 ```
 
 ### .bashrc
@@ -245,4 +297,21 @@ First, aim to upload to test.pypi.org so that you're not using the real thing.
 4. Create a test.pypi account and then upload to test.pypi with `python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*` 
 5. With a virtualenv, you can then download the pip package you just uploaded `python3 -m pip install --index-url https://test.pypi.org/simple/ PACKAGE_NAME` (where `PACKAGE_NAME` matches what you put in your `setup.py`. 
 
-Then upload to the real PyPi once you're satistified with the tests.  
+Then upload to the real PyPi once you're satistified with the tests.
+
+1. `twine upload dist/*`. 
+2. Make sure it uploaded correctly with `pip install [PACKAGE-NAME]` and `https://pypi.org/project/PACKAGE-NAME/`. 
+
+## Reddit Python API (PRAW) 
+1. Create an account on Reddit. 
+2. Follow these instructions https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example. You are a script type app. You will create an app on the Reddit site and then get a clientID and client secret.
+3. Then you can query via substituting in the relative credentials  
+```
+import praw
+reddit = praw.Reddit(
+    username = my_username, 
+    password = my_password, 
+    client_id=my_client_id,
+    client_secret=my_client_secret,
+    user_agent='blah')
+```
