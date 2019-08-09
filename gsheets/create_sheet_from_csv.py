@@ -12,7 +12,7 @@ def get_creds():
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
     # time.
-    fname = os.getenv("HOME")+'/gsheets/token.pickle'
+    fname = os.getenv("HOME")+'/helpful/gsheets/token.pickle'
     print(fname)
     if not os.path.exists(fname): 
         raise Exception('Create '+fname+ ' first by downloading credentials.json and following https://developers.google.com/sheets/api/quickstart/python')
