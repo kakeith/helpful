@@ -1,5 +1,5 @@
 from pprint import pprint
-import pickle, os 
+import pickle, os, argparse 
 from googleapiclient import discovery
 
 """
@@ -69,6 +69,8 @@ def test_small_csv():
 
 if __name__ == "__main__": 
     #test_small_csv() 
+
+    #EXAMPLE USAGE: python create_sheet_from_csv.py small_csv.csv blah
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_path", type=str)
     parser.add_argument("sheet_title", type=str)
