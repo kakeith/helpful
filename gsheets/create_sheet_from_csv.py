@@ -63,8 +63,14 @@ def upload_csv_file_to_google_sheets(csv_path, sheet_title):
     #sheet_id = create_new_worksheet()
     push_csv_to_gsheet(csv_path, credentials, sheet_title)
 
-if __name__ == "__main__": 
-    #test it 
+def test_small_csv():
     csv_path = 'small_csv.csv'
     sheet_title = 'test_upload_api'
-    upload_csv_file_to_google_sheets(csv_path, sheet_title)
+
+if __name__ == "__main__": 
+    #test_small_csv() 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("csv_path", type=str)
+    parser.add_argument("sheet_title", type=str)
+    args = parser.parse_args()
+    upload_csv_file_to_google_sheets(args.csv_path, args.sheet_title)
