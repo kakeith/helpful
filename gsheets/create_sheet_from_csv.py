@@ -15,7 +15,7 @@ def get_creds():
     fname = os.getenv("HOME")+'/helpful/gsheets/token.pickle'
     print(fname)
     if not os.path.exists(fname): 
-        raise Exception('Create '+fname+ ' first by downloading credentials.json and following https://developers.google.com/sheets/api/quickstart/python')
+        raise Exception('Create '+fname+ ' by downloading credentials.json and following https://developers.google.com/sheets/api/quickstart/python, make sure to remove the .readonly from SCOPES')
     with open('token.pickle', 'rb') as token:
         creds = pickle.load(token)
     return creds 
