@@ -285,6 +285,24 @@ E.g. you have an error message:
 ```
 remote: error: File pytorch.zip is 510.96 MB; this exceeds GitHub Enterprise's file size limit of 100.00 MB
 ```
+### add commit push in one function 
+Save this in your .bashrc or equivalent 
+```
+function lazygit(){
+    #last argument is the commit message
+    #all args before the last are the files you want to commit 
+
+    #example::
+    # lazygit 'blah.py' 'blah2.py' 
+    # --> commits files blah.py blah2.py 
+    # --> writes commit mesage 'this is a test message'
+    array=($@)
+    len=${#array[@]}
+    git add "${array[@]:0:$len-1}"
+    git commit -m "${array[$len]}"
+    git push
+}
+```
 
 ## Python package distribution (PyPi) 
 Best instructions to follow: https://packaging.python.org/tutorials/packaging-projects/
