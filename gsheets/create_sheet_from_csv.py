@@ -9,10 +9,11 @@ Main helpful reference:
 https://stackoverflow.com/questions/42362702/how-to-import-a-csv-file-using-google-sheets-api-v4
 """
 def get_creds():
-    # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
-    fname = os.getenv("HOME")+'/helpful/gsheets/token.pickle'
+    """
+    Make sure you have already downloaded credentials.json and followed https://developers.google.com/sheets/api/quickstart/python
+        -make sure to remove the .readonly from SCOPES'
+    """
+    fname = os.getenv("HOME")+'/helpful/gsheets/token.pickle' #you may want to change this to wherever you're storing your token.pickle
     print(fname)
     if not os.path.exists(fname): 
         raise Exception('Create '+fname+ ' by downloading credentials.json and following https://developers.google.com/sheets/api/quickstart/python, make sure to remove the .readonly from SCOPES')
@@ -66,6 +67,7 @@ def upload_csv_file_to_google_sheets(csv_path, sheet_title):
 def test_small_csv():
     csv_path = 'small_csv.csv'
     sheet_title = 'test_upload_api'
+    upload_csv_file_to_google_sheets(csv_path, sheet_title)
 
 if __name__ == "__main__": 
     #test_small_csv() 
