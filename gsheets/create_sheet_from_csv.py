@@ -16,7 +16,7 @@ def get_creds():
     print(fname)
     if not os.path.exists(fname): 
         raise Exception('Create '+fname+ ' by downloading credentials.json and following https://developers.google.com/sheets/api/quickstart/python, make sure to remove the .readonly from SCOPES')
-    with open('token.pickle', 'rb') as token:
+    with open(fname, 'rb') as token:
         creds = pickle.load(token)
     return creds 
 
