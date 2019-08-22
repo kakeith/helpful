@@ -240,6 +240,11 @@ Make the date
 START=`date '+%m-%d-%H:%M'`
 ```
 
+### sending emails with bash
+```
+mail -s "<<SUBJECT OF EMAIL>>" kkeith@cs.umass.edu < ${file_email_body}
+```
+
 ### .bashrc
 ```
 #Makes folders colored 
