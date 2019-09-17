@@ -272,6 +272,11 @@ Multiple inputs
 ```
 cat fileinput | parallel --colsep '\t' myprogram {1} {2} {1}_vs_{2}.result
 ```
+In a for loop 
+```
+for day in {0..3}; do echo "${day}"; done | parallel -v --dryrun "python blah.py {}"
+```
+
 
 ### Using a GUI on a remote server
 https://www.macissues.com/2014/10/13/how-to-mount-a-remote-system-as-a-drive-using-ssh-in-os-x/
