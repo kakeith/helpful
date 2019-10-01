@@ -69,6 +69,14 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Python
 
+### Python strings 
+```
+print("{0:<1} {1:<3}".format("blah1", "blah2")
+```
+left-align `<` 
+center `^`
+right-align  `>`
+
 ### Exceptions
 Basic expection method that exists the program 
 ```
