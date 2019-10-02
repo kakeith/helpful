@@ -312,7 +312,7 @@ function lgit(){
     #all args before the last are the files you want to commit 
 
     #example::
-    # lazygit 'blah.py' 'blah2.py' 
+    # lazygit 'blah.py' 'blah2.py' 'this is a test message'
     # --> commits files blah.py blah2.py 
     # --> writes commit mesage 'this is a test message'
     array=($@)
