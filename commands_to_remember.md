@@ -303,10 +303,11 @@ E.g. you have an error message:
 ```
 remote: error: File pytorch.zip is 510.96 MB; this exceeds GitHub Enterprise's file size limit of 100.00 MB
 ```
-### add commit push in one function 
+### Lazy git: add commit push in one function 
 Save this in your .bashrc or equivalent 
 ```
-function lazygit(){
+function lgit(){
+    #lazy git 
     #last argument is the commit message
     #all args before the last are the files you want to commit 
 
