@@ -66,6 +66,11 @@ print('Training mean accuracy=', best_model.score(X, y))
 \end{table}
 ```
 
+## Pytest 
+Test a single function 
+```
+python -m pytest script.py -k "function name"
+```
 
 ## Python
 
