@@ -65,6 +65,14 @@ print('Training mean accuracy=', best_model.score(X, y))
   \caption{XXX  \label{t:XXX}}
 \end{table}
 ```
+### Making tables pretty 
+Add ragged right 
+```
+\usepackage{array}
+
+#later on 
+\begin{tabular}{c  >{\raggedright\arraybackslash}p{3cm}}
+```
 
 ## Pytest 
 Test a single function 
