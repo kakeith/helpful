@@ -187,6 +187,9 @@ Write to standard error when loading big files
 sys.stderr.write(".")
 ```
 
+## ssh
+How to create ssh keys: https://superuser.com/questions/8077/how-do-i-set-up-ssh-so-i-dont-have-to-type-my-password
+
 ## Jupyter notebook 
 
 ```
