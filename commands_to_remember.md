@@ -253,6 +253,11 @@ Here is an example that I use often: list of dicts -> pandas dataframe (python) 
 
 ## Linux/Unix 
 
+### Vim 
+Install supertab so you can tab complete in vim 
+1. git clone the source directly https://vimawesome.com/plugin/supertab, use the "Pathogen" directions
+2. Add the following to your .vimrc `:so ~/.vim/bundle/supertab/plugin/supertab.vim`
+
 ### Symbolic link
 ```
 ln -s ORIGNIAL SYMLINK
