@@ -1,13 +1,20 @@
-from pprint import pprint
-import pickle, os, argparse 
-from googleapiclient import discovery
 
 """
 Goal: create a Google sheets from csv file 
 
+Usage: 
+
+python ~/helpful/gsheets/create_sheet_from_csv.py CSV_FILE GSHEETS_DESIRED NAME
+
 Main helpful reference: 
 https://stackoverflow.com/questions/42362702/how-to-import-a-csv-file-using-google-sheets-api-v4
 """
+
+from pprint import pprint
+import pickle, os, argparse 
+from googleapiclient import discovery
+
+
 def get_creds():
     """
     Make sure you have already downloaded credentials.json and followed https://developers.google.com/sheets/api/quickstart/python
