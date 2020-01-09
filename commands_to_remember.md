@@ -82,6 +82,11 @@ python -m pytest script.py -k "function name"
 
 ## Python
 
+### Quick number of lines in a file 
+```
+num_lines = sum(1 for line in open('myfile.txt'))
+```
+
 ### Python strings 
 ```
 print("{0:<1} {1:<3}".format("blah1", "blah2")
