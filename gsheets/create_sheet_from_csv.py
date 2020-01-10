@@ -6,6 +6,10 @@ Usage:
 
 python ~/helpful/gsheets/create_sheet_from_csv.py CSV_FILE GSHEETS_DESIRED NAME
 
+Required package: 
+
+pip install google-api-python-client
+
 Main helpful reference: 
 https://stackoverflow.com/questions/42362702/how-to-import-a-csv-file-using-google-sheets-api-v4
 """
