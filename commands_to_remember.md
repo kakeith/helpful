@@ -27,6 +27,8 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Latex
 
+Using Latex in sublime instructions: http://individual.utoronto.ca/dobronyi/latexsublime.html
+
 ### Use for comments 
 ```
 \usepackage{color}
