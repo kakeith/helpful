@@ -27,7 +27,23 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Latex
 
+### Latex with Sublime 
+
 Using Latex in sublime instructions: http://individual.utoronto.ca/dobronyi/latexsublime.html
+
+#### Sublime snippets
+Snippets are short-cut code that can speed up editing. To create a new snippet, within sublime `Tools -> Developer -> New Snippet...`. Here is a template snippet that I made 
+```
+<snippet>
+    <content><![CDATA[\begin{equation*}
+    $0
+\end{equation*}]]></content>
+    <tabTrigger>eqs</tabTrigger>
+    <scope>text.tex.latex</scope>
+    <description>Equation Star</description>
+</snippet>
+```
+I saved this with the name `EquationStar.sublime-snippet` in the default location. Then, within a latex document write `eqs` and tab and you should get the starred equation enivornment. 
 
 ### Use for comments 
 ```
