@@ -219,6 +219,13 @@ How to create ssh keys: https://superuser.com/questions/8077/how-do-i-set-up-ssh
 #covert jupyter to .py file 
 jupyter nbconvert --to script 1idvl.ipynb
 ```
+### Jupyter notebook as slides! 
+https://medium.com/@mjspeck/presenting-code-using-jupyter-notebook-slides-a8a3c3b59d67
+
+1. `View → Cell Toolbar → Slideshow`
+2. `jupyter nbconvert SCRIPTNAME.ipynb --to slides --post serve`
+
+
 ### Open jupyter notebook from remote server locally
 1. On remote, `jupyter notebook --port=9999`
 2. On local, `ssh -NL $PORT:localhost:$PORT kkeith@hobbes.cs.umass.edu` where you specify `PORT=999` or whatever the port is on your remote. 
