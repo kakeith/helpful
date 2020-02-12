@@ -100,6 +100,11 @@ python -m pytest script.py -k "function name"
 
 ## Python
 
+### Install pip package with a conda environment
+```
+~/anaconda3/envs/events2/bin/pip install PACKAGENAME
+```
+
 ### Quick number of lines in a file 
 ```
 num_lines = sum(1 for line in open('myfile.txt'))
