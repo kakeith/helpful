@@ -27,6 +27,14 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Latex
 
+### Columns 
+```
+\begin{columns}
+\column{0.45\textwidth}
+\column{0.45\textwidth}
+\end{colums}
+```
+
 ### Latex with Sublime 
 
 Using Latex in sublime instructions: http://individual.utoronto.ca/dobronyi/latexsublime.html
