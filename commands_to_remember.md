@@ -32,7 +32,7 @@ print('Training mean accuracy=', best_model.score(X, y))
 \begin{columns}
 \column{0.45\textwidth}
 \column{0.45\textwidth}
-\end{colums}
+\end{columns}
 ```
 
 ### Latex with Sublime 
