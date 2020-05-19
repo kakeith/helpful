@@ -359,6 +359,12 @@ umount -f ~/mount/
 
 ## Git / Github 
 
+### Searching
+Search within a particular folder on github.com
+```
+path:FOLDERNAME/ KEYWORD
+```
+
 ### Remove large files 
 Removing a large file that you committed several commits ago but now can't push. (A lot of the filter-branch suggestions don't work for me in many cases) 
 https://blog.ostermiller.org/git-remove-from-history
