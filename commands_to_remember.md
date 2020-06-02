@@ -359,6 +359,46 @@ umount -f ~/mount/
 
 ## Git / Github 
 
+### Create branches and pull requests
+This is how I follow the "feature branches" workflow 
+
+1. (Locally) Make sure you are on the master branch and pull any remote updates before you create a new branch
+```
+git checkout master
+git pull origin master
+```
+
+1. (Locally) Create a new branch 
+```
+git checkout -b my-new-feature-branch
+```
+and when you call `git branch` you should see 
+```
+  master
+* my-new-feature-branch
+```
+
+1. After making changes to the files on that branch add and commit them 
+```
+git add .
+git commit -m "message"
+```
+
+1. Then push the branch to Github
+```
+git push origin my-new-feature-branch
+```
+
+1. On Github, create a pull request for the branch, merge, and delete the branch. 
+
+1. (Locally) Pull and delete the branch you had 
+```
+git checkout master
+git pull origin master
+git branch -d my-new-feature-branch
+```
+Note: This is a very simple workflow when you're not worried about getting out of sync with others. To improve the workflow follow directions like these: https://gist.github.com/blackfalcon/8428401
+
 ### Searching
 Search within a particular folder on github.com
 ```
