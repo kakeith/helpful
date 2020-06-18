@@ -462,3 +462,8 @@ reddit = praw.Reddit(
     client_secret=my_client_secret,
     user_agent='blah')
 ```
+
+# Sublime on the command line 
+Follow these insructions: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
+In addition, I had to add to my `.bash_profile`: 
+`alias subl=~/bin/subl` (or might also be `alias subl=~/bin/sublime`). 
