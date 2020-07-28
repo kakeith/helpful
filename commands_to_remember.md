@@ -357,7 +357,14 @@ sshfs kkeith@hobbes.cs.umass.edu:/home/kkeith/ ~/mount/
 umount -f ~/mount/
 ```
 
-## Git / Github 
+## Git / Github
+
+### Compare two different commits in Github 
+From: https://docs.github.com/en/github/committing-changes-to-your-project/comparing-commits#comparing-commits
+```
+https://github.com/kakeith/REPO-NAME/compare/c3a414e..faf7c6f
+```
+where `c3a414e` and `faf7c6f` are shortened seven-character SHA codes.
 
 ### Create branches and pull requests
 This is how I follow the "feature branches" workflow 
