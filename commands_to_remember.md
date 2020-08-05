@@ -108,6 +108,25 @@ python -m pytest script.py -k "function name"
 
 ## Python
 
+### Python logging module 
+
+Logging that prints to console and to log file 
+```
+import logging 
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s — %(funcName)s:%(lineno)d — %(message)s")
+today = date.today()
+file_handler = logging.FileHandler(str(today)+ "-"+ str(os.path.basename(__file__)) +".log") 
+logger.addHandler(file_handler)
+```
+
+Then later in the script you can call: 
+```
+logger.debug("text here") 
+logger.info('saved to->' + str(fname))
+logger.warn("more text") 
+```
+
 ### Install pip package with a conda environment
 ```
 ~/anaconda3/envs/events2/bin/pip install PACKAGENAME
