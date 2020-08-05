@@ -325,6 +325,12 @@ eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 ```
 
+### Sed 
+Example: Change the expressions "<strong>" and "</strong>" to a space " "
+```
+sed 's/<strong>/ /g; s/<\/strong>/ /g' INPUTFILE > OUTPUTFILE
+```
+
 ### Awk 
 ```
 #prints the third column 
