@@ -108,6 +108,19 @@ python -m pytest script.py -k "function name"
 
 ## Python
 
+### Coloring text in Python 
+```
+def print_colored_terms(text, term_list, color="Tomato"):
+    import re
+    for term in term_list: 
+        #for command line print
+        #text = re.sub(term, '\033[34m{0}\033[30m'.format(term), text)
+        
+        #for HTML print within Jupyter Notebooks 
+        text = re.sub(term, '<span style="color:{1};">{0}<span style="color:black">'.format(term, color), text)
+    return text
+```
+
 ### Python logging module 
 
 Logging that prints to console and to log file 
