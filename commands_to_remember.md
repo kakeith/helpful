@@ -111,13 +111,24 @@ python -m pytest script.py -k "function name"
 ### Python logging module 
 
 Logging that prints to console and to log file 
+
+Top of the file: 
 ```
 import logging 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s — %(funcName)s:%(lineno)d — %(message)s")
-today = date.today()
-file_handler = logging.FileHandler(str(today)+ "-"+ str(os.path.basename(__file__)) +".log") 
-logger.addHandler(file_handler)
+```
+
+In main call: 
+```
+def logging_set_up(): 
+	logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s — %(funcName)s:%(lineno)d — %(message)s")
+	today = date.today()
+	log_dir = "logs/"
+	if not os.path.exists(log_dir): os.mkdir(log_dir)
+	log_file = log_dir + str(today)+ "-"+ str(os.path.basename(__file__)) +".log"
+	file_handler = logging.FileHandler(log_file) 
+	logger.addHandler(file_handler)
+	print('saving log file to: ', log_file)
 ```
 
 Then later in the script you can call: 
