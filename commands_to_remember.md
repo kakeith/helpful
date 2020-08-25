@@ -114,6 +114,7 @@ Logging that prints to console and to log file
 
 Top of the file: 
 ```
+from datetime import date
 import logging 
 logger = logging.getLogger(__name__)
 ```
