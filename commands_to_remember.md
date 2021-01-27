@@ -191,6 +191,7 @@ if __name__ == '__main__':
 ```
 parser = argparse.ArgumentParser()
 parser.add_argument("input", help=".json file", type=str)
+parser.add_argument('--foobar', action='store_true') #optional argument that if flag is made, stores as true
 args = parser.parse_args()
 ```
 
