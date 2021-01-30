@@ -170,6 +170,12 @@ left-align `<`
 center `^`
 right-align  `>`
 
+### Print precision in numpy 
+```
+np.format_float_positional(0.5, precision=2)
+```
+Output will be `0.50`.
+
 ### Exceptions
 Basic expection method that exists the program 
 ```
