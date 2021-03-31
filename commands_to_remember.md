@@ -304,10 +304,11 @@ Change the cell type to markdown and then use
 ### Using virtualenv within a jupyter notebook 
 
 ```
-$ python -m venv projectname
-$ source projectname/bin/activate
-(venv) $ pip install ipykernel
-(venv) $ ipython kernel install --user --name=projectname
+$PROJ=projectname
+$ python -m venv $PROJ
+$ source $PROJ/bin/activate
+(projectname) $ $PROJ/bin/pip install ipykernel
+(projectname) $ $PROJ/bin/ipython kernel install --user --name=projectname
 ```
 
 Make sure that it is in the kernelspec list 
