@@ -405,7 +405,7 @@ cat fileinput | parallel --colsep '\t' myprogram {1} {2} {1}_vs_{2}.result
 ```
 In a for loop 
 ```
-for day in {0..3}; do echo "${day}"; done | parallel -v --dryrun "python blah.py {}"
+for day in $seq(1 20); do echo "${day}"; done | parallel -v --dryrun "python blah.py {}"
 ```
 
 
