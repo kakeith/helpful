@@ -309,7 +309,7 @@ $PROJ=projectname
 $ python -m venv $PROJ
 $ source $PROJ/bin/activate
 (projectname) $ $PROJ/bin/pip install ipykernel
-(projectname) $ ipython kernel install --user --name=projectname
+(projectname) $ $PROJ/bin/ipython kernel install --user --name=projectname
 ```
 
 Make sure that it is in the kernelspec list 
