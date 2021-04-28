@@ -294,7 +294,7 @@ https://medium.com/@mjspeck/presenting-code-using-jupyter-notebook-slides-a8a3c3
 1. On remote, `~/anaconda3/bin/jupyter notebook --port=9999`
 2. On local, `ssh -NL ${PORT}:localhost:${PORT} kkeith@hobbes.cs.umass.edu` where you specify `PORT=9999` or whatever the port is on your remote. 
 3. Manually open in a browser `http://localhost:9999/tree`
-4. Password `jupyter notebook`
+4. Password `jupyternotebook`
 
 ### Add images to Jupyter notebook
 Change the cell type to markdown and then use 
