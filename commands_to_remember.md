@@ -306,7 +306,7 @@ Change the cell type to markdown and then use
 
 ```
 $PROJ=projectname
-$ python -m venv $PROJ
+$ ~/anaconda3/bin/python -m venv $PROJ
 $ source $PROJ/bin/activate
 (projectname) $ $PROJ/bin/pip install ipykernel
 (projectname) $ $PROJ/bin/ipython kernel install --user --name=projectname
