@@ -81,6 +81,7 @@ I saved this with the name `EquationStar.sublime-snippet` in the default locatio
 \usepackage{booktabs}
 \begin{table}[t]
   \centering
+  \resizebox{0.98\linewidth}{!}{ %makes it fit within the margin limits
       \begin{tabular}{lll}
       \toprule
       Relation         & Yes   & No    \\
@@ -88,6 +89,7 @@ I saved this with the name `EquationStar.sublime-snippet` in the default locatio
       Institution      & 27045 & 15579 \\
       Place of birth   & 6992  & 2574 
   \end{tabular}
+  }
   \caption{XXX  \label{t:XXX}}
 \end{table}
 ```
