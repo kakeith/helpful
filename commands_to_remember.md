@@ -253,6 +253,7 @@ plt.close()
 ```
 
 ### Parsing HTML tables with BeautifulSoup, save to csv  
+Use the browser "inspect" 
 ```
 import urllib, requests, json, time
 from bs4 import BeautifulSoup
