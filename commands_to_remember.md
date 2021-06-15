@@ -540,3 +540,9 @@ reddit = praw.Reddit(
 Follow these insructions: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
 In addition, I had to add to my `.bash_profile`: 
 `alias subl=~/bin/subl` (or might also be `alias subl=~/bin/sublime`). 
+
+# Twitter, Twint
+Get Tweets w/o the api 
+```
+https://github.com/twintproject/twint
+```
