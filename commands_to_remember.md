@@ -270,6 +270,10 @@ for row in soup.find_all('tr'):
     cols = ''.join([ele.text.strip()+',' for ele in cols])+'\n'
     ww.write(cols)
 ```
+Better way to find a certain class or id 
+```
+soup.findAll("div", {"class": "tweet"})
+```
 
 ### Other 
 Write to standard error when loading big files
