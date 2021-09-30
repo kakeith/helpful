@@ -371,6 +371,19 @@ https://vatlab.github.io/blog/post/sos-notebook/
 Here is an example that I use often: list of dicts -> pandas dataframe (python) -> R dataframe using SoS 
 <img src="imgs/sos.JPG" alt="Drawing" style="width: 500px;">
 
+### Bugs with R kernel in Jupyter Notebook (2021-09-30)
+I needed to update the version of R used remotely (hobbes) in Jupyter Notebook. I kept running into this annoying error: 
+```
+jupyter-client has to be installed but “jupyter kernelspec --version” exited with code 127
+```
+What fixed the error was changing my `.zshrc` file to include the anaconda path `export PATH="home/kkeith/anaconda3/bin:$PATH"`. 
+
+Then I ran the following in the (updated R version) R console: 
+```
+install.packages('IRkernel')
+IRkernel::installspec(name = 'ir41', displayname = 'R 4.1') #to distingush from the other R
+```
+This worked! 
 
 ## Linux/Unix 
 
