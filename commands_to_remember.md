@@ -136,6 +136,10 @@ def write_array_to_csv(array_of_interest, fout):
         w.write('\n')
     print('wrote to ->', fout, 'len=', len(array_of_interest))
 ```
+Then in R you can read in via 
+```
+x <- read.csv(file = 'FILE.csv', header = FALSE)
+```
 
 ### Python logging module 
 
