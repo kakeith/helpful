@@ -123,6 +123,20 @@ def print_colored_terms(text, term_list, color="Tomato"):
     return text
 ```
 
+### Python->R: Write array to csv to load into R
+```
+def write_array_to_csv(array_of_interest, fout): 
+    """
+    array_of_interest : np.array
+    
+    fout : str, what you want to call the file 
+    """
+    with open(fout, 'w') as w: 
+        w.write(','.join([str(x) for x in array_of_interest.tolist()]))
+        w.write('\n')
+    print('wrote to ->', fout, 'len=', len(array_of_interest))
+```
+
 ### Python logging module 
 
 Logging that prints to console and to log file 
