@@ -511,12 +511,25 @@ path:FOLDERNAME/ KEYWORD
 
 ### Remove large files 
 Removing a large file that you committed several commits ago but now can't push. (A lot of the filter-branch suggestions don't work for me in many cases) 
-https://blog.ostermiller.org/git-remove-from-history
 
 E.g. you have an error message: 
 ```
 remote: error: File pytorch.zip is 510.96 MB; this exceeds GitHub Enterprise's file size limit of 100.00 MB
 ```
+
+2021-10-07 Update, this worked for me 
+Follow/modify these instructions https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#using-the-bfg
+1. `wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar` or whatever is here https://rtyley.github.io/bfg-repo-cleaner/
+2. in your `.zshrc` add `alias bfg='java -jar bfg-1.14.0.jar`
+3. 
+```
+bfg --delete-files BIG_FILE_NAME GITHUB_REPO_PATH
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git commit -m 'remove large files'
+git push
+```
+ 
+
 ### Lazy git: add commit push in one function 
 Save this in your .bashrc or equivalent 
 ```
