@@ -590,3 +590,6 @@ Get Tweets w/o the api
 ```
 https://github.com/twintproject/twint
 ```
+
+# Connecting iPad to Mac to use as a screen
+Using Duet https://www.duetdisplay.com/ (have to buy the iPad app but the Mac download should be free) 
