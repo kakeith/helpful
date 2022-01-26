@@ -6,6 +6,12 @@ Katherine Keith
 
 [Helpful tutorial using this software.](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) 
 
+## VS Code
+
+### Formatting 
+1. Set-up `black` https://devblogs.microsoft.com/python/python-in-visual-studio-code-may-2018-release/
+2. Run `Shift + Option + F` while a .py file is open to format it via black. 
+
 ## Sklearn 
 
 ### Grid search, cross validation 
