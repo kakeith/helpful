@@ -114,6 +114,16 @@ Test a single function
 python -m pytest script.py -k "function name"
 ```
 
+## Joblib 
+From Sergey 2022-02-09
+```
+from joblib import Parllel, delayed
+res = Parallel(n_jobs=40, prefer="threads", verbose=5, require="sharedmem")(
+    delayed(update_contractions_with_more_precision)(venue_pair, score) for venue_pair, score in contractions.items()
+)
+```
+Then whatever your function is goes into (delayed), contractions can be anything
+
 ## Python
 
 ### Coloring text in Python 
