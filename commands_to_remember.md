@@ -126,6 +126,12 @@ Then whatever your function is goes into (delayed), contractions can be anything
 
 ## Python
 
+### Importing one module into another
+This snippet of code can often be helpful
+```
+sys.path.insert(0, os.getcwd() + "/synthetic_confound_treat_function")
+```
+
 ### Coloring text in Python 
 ```
 def print_colored_terms(text, term_list, color="Tomato"):
