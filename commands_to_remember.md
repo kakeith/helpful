@@ -529,6 +529,18 @@ git branch -d my-new-feature-branch
 ```
 Note: This is a very simple workflow when you're not worried about getting out of sync with others. To improve the workflow follow directions like these: https://gist.github.com/blackfalcon/8428401
 
+#### Branches from remote 
+You must create a local branch to add to a remote branch 
+```
+git pull 
+git checkout -b <local-branch> <remote-repository>/<remote-branch>
+```
+Example: 
+```
+git checkout -b outcome-corr-migrate remotes/origin/outcome-corr-migrate
+```
+
+
 ### Searching
 Search within a particular folder on github.com
 ```
