@@ -572,6 +572,13 @@ function lgit(){
 }
 ```
 
+### Git ignore 
+Create a git igore like this one: https://paulvanderlaken.com/2020/05/12/create-perfect-gitignore-file-for-project/
+Then 
+```
+git config --global core.excludesFile ~/.gitignore
+```
+
 ## Python package distribution (PyPi) 
 Best instructions to follow: https://packaging.python.org/tutorials/packaging-projects/
 
