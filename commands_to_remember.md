@@ -12,6 +12,10 @@ Katherine Keith
 1. Set-up `black` https://devblogs.microsoft.com/python/python-in-visual-studio-code-may-2018-release/
 2. Run `Shift + Option + F` while a .py file is open to format it via black. 
 
+### Other short-cuts/tricks in VS Code 
+- Rename refacoring (across all files in a project) `highlight variable name + F2`
+- 
+
 ## Sklearn 
 
 ### Grid search, cross validation 
