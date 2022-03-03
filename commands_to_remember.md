@@ -638,3 +638,10 @@ https://github.com/twintproject/twint
 
 # Connecting iPad to Mac to use as a screen
 Using Duet https://www.duetdisplay.com/ (have to buy the iPad app but the Mac download should be free) 
+
+# iTerm2 (command line) 
+Make it so that opening a new tab in the same folder
+https://futurestud.io/tutorials/iterm-duplicate-a-tab-by-opening-a-new-tab-in-the-same-folder
+```
+CMD + SHIFT + t
+```
