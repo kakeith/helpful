@@ -89,6 +89,7 @@ I saved this with the name `EquationStar.sublime-snippet` in the default locatio
 
 ```
 \usepackage{booktabs}
+\usepackage{graphicx}
 \begin{table}[t]
   \centering
   \resizebox{0.98\linewidth}{!}{ %makes it fit within the margin limits
