@@ -1,6 +1,9 @@
 # Commands to remember
 Katherine Keith
 
+### Terminal 
+`option + [arrow keys]` moves forward backward words 
+
 ## LDA, topic models  
 [Gensim wrapper of Mallet](https://radimrehurek.com/gensim/models/wrappers/ldamallet.html). 
 
