@@ -10,6 +10,8 @@ Katherine Keith
 [Helpful tutorial using this software.](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) 
 
 ## VS Code
+### Other VS Code shortcuts
+1. Collapse all functions, `COMMAND + K COMMAND + 0`
 
 ### Formatting 
 1. Set-up `black` https://devblogs.microsoft.com/python/python-in-visual-studio-code-may-2018-release/
