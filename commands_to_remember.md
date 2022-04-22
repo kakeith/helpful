@@ -127,7 +127,7 @@ python -m pytest script.py -k "function name"
 ## Joblib 
 From Sergey 2022-02-09
 ```
-from joblib import Parllel, delayed
+from joblib import Parallel, delayed
 res = Parallel(n_jobs=40, prefer="threads", verbose=5, require="sharedmem")(
     delayed(update_contractions_with_more_precision)(venue_pair, score) for venue_pair, score in contractions.items()
 )
