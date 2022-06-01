@@ -234,9 +234,15 @@ Basic expection method that exists the program
 raise Exception('write your message here')
 ```
 
-### Pandas select rows that have a column match 
+## Pandas 
+
+### pandas select rows that have a column match 
 ```
 new_df = old_df.loc[old_df['colm_name'] == 1]
+```
+### pandas left outer join 
+```
+df_join = pd.merge(df_left, df_right, left_on='left_id', right_on='right_id', how='left')
 ```
 
 ### Boilerplate 
