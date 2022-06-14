@@ -20,6 +20,7 @@ Katherine Keith
 ### Other short-cuts/tricks in VS Code 
 - Rename refactoring (across all files in a project) `highlight variable name + F2`
 - Using VS Code with a remote server (ssh) https://code.visualstudio.com/docs/remote/ssh
+- VS Code sometimes issues with jupyter notebook. Sometimes this command works `conda install -n env1 ipykernel --update-deps --force-reinstall` and then restart VS Code.
 
 ## Sklearn 
 
