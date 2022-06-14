@@ -18,8 +18,8 @@ Katherine Keith
 2. Run `Shift + Option + F` while a .py file is open to format it via black. 
 
 ### Other short-cuts/tricks in VS Code 
-- Rename refacoring (across all files in a project) `highlight variable name + F2`
-- 
+- Rename refactoring (across all files in a project) `highlight variable name + F2`
+- Using VS Code with a remote server (ssh) https://code.visualstudio.com/docs/remote/ssh
 
 ## Sklearn 
 
