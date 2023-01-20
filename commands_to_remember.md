@@ -76,7 +76,9 @@ I saved this with the name `EquationStar.sublime-snippet` in the default locatio
 ```
 ### Reduce space between bullets 
 ```
-\begin{itemize}[noitemsep]
+\usepackage{enumitem}
+
+\begin{itemize}\begin{itemize}[leftmargin=*,noitemsep]
 \itemsep0em
 ```
 
