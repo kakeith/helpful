@@ -231,6 +231,11 @@ np.format_float_positional(0.5, precision=2)
 ```
 Output will be `0.50`.
 
+### Set random seed in numpy 
+```
+rng = np.random.default_rng(seed)
+```
+
 ### Exceptions
 Basic expection method that exists the program 
 ```
