@@ -43,6 +43,22 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Latex
 
+### booleans for annonymization 
+```
+% In header
+
+\usepackage{ifthen}
+\newboolean{isAnnonymized} % Declare a new boolean
+\setboolean{isAnnonymized}{true} % Set to be true or false
+
+% In body
+
+\ifthenelse{\boolean{isAnnonymized}}
+{Is annonymized} % This happens if the boolean above is true
+{Is not annonymized} % This happens if the boolean above is false
+
+```
+
 ### Columns 
 ```
 \begin{columns}
