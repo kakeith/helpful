@@ -22,6 +22,11 @@ Katherine Keith
 - Using VS Code with a remote server (ssh) https://code.visualstudio.com/docs/remote/ssh
 - VS Code sometimes issues with jupyter notebook. Sometimes this command works `conda install -n env1 ipykernel --update-deps --force-reinstall` and then restart VS Code.
 
+### Equivalent of `ipdb` in VS Code (interactive debugger for Python) 
+1. Set a red-dot `breakpoint` by clicking by the line-number on the far left of the screen.
+2. In the upper File menu click Run > Start Debugging
+3. The interpreter will stop at the breakpoint. Use the debug console on the lower right to inspect the variables and use the interactive debugger. 
+
 ## Sklearn 
 
 ### Grid search, cross validation 
