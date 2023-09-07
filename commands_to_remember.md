@@ -1,6 +1,13 @@
 # Commands to remember
 Katherine Keith
 
+### Presentations in Google Slides and Google Chrome
+
+1. In the upper right `Slideshow > Presenter View`
+2. Put the non-speaker notes in tab and on the second monitor 
+3. `Help >` Disable `Always show toolbar in Full Screen`
+4. Present!
+
 ### Terminal 
 `option + [arrow keys]` moves forward backward words 
 
