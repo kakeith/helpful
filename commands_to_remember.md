@@ -530,6 +530,11 @@ umount -f ~/mount/
 
 ## Git / Github
 
+### Add all files of a certain type (subdirectories) to git 
+```
+git add **/*.java
+```
+
 ### Compare two different commits in Github 
 From: https://docs.github.com/en/github/committing-changes-to-your-project/comparing-commits#comparing-commits
 ```
