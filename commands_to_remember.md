@@ -55,6 +55,11 @@ print('Training mean accuracy=', best_model.score(X, y))
 
 ## Latex
 
+### Equation number over an equals sign 
+```
+$y \stackrel{(\ref{eqn:indep})}{=} y + c$
+```
+
 ### booleans for annonymization 
 ```
 % In header
