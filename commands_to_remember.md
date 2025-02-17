@@ -17,6 +17,10 @@ Katherine Keith
 [Helpful tutorial using this software.](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) 
 
 ## VS Code
+
+### Visual Studio Code, Markdown preview
+`Cmd + Shift + V (Mac)` to toggle the Markdown preview
+
 ### Other VS Code shortcuts
 1. Collapse all functions, `COMMAND + K COMMAND + 0`
 
